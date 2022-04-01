@@ -9,23 +9,22 @@ initDist(){
   cd docs/.vuepress/dist
 }
 
-initDist "module.exports = '/vuepress-theme-vdoing-doc/'"
+initDist "module.exports = '/'"
 echo 'google.com, pub-7828333725993554, DIRECT, f08c47fec0942fa0' > ads.txt # 谷歌广告相关文件
 
 # deploy to github
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
-  githubUrl=git@github.com:xugaoyi/vuepress-theme-vdoing-doc.git
+  githubUrl=git@github.com:erdang/erdang.github.io.git
 else
   msg='来自github actions的自动部署'
-  githubUrl=https://xugaoyi:${GITHUB_TOKEN}@github.com/xugaoyi/vuepress-theme-vdoing-doc.git
-  git config --global user.name "xugaoyi"
-  git config --global user.email "894072666@qq.com"
+  githubUrl=https://erdang:${GITHUB_TOKEN}@github.com/erdang/erdang.github.io.git
+
 fi
 
 initGit(){
   git init
-  git add -A
+  git add -A  
   git commit -m "${msg}"
 }
 initGit
