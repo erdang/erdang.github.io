@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>算法题常用的JS | 前端小册</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/img/favicon.ico">
+    <script data-ad-client="ca-pub-7828333725993554" async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="description" content="个人知识笔记">
+    <meta name="keywords" content="vuepress,theme,blog,vdoing">
+    <meta name="theme-color" content="#11a8cd">
+    <link rel="preload" href="/assets/css/0.styles.6e60c68c.css" as="style"><link rel="preload" href="/assets/js/app.c3eaab60.js" as="script"><link rel="preload" href="/assets/js/2.0d541d74.js" as="script"><link rel="preload" href="/assets/js/22.ed465c56.js" as="script"><link rel="prefetch" href="/assets/js/10.945953ec.js"><link rel="prefetch" href="/assets/js/11.fdd192f9.js"><link rel="prefetch" href="/assets/js/12.f930e6cf.js"><link rel="prefetch" href="/assets/js/13.83f7fdb4.js"><link rel="prefetch" href="/assets/js/14.d1f6a6d2.js"><link rel="prefetch" href="/assets/js/15.a3fc3a4c.js"><link rel="prefetch" href="/assets/js/16.1af45818.js"><link rel="prefetch" href="/assets/js/17.34452123.js"><link rel="prefetch" href="/assets/js/18.c2709a46.js"><link rel="prefetch" href="/assets/js/19.eda02219.js"><link rel="prefetch" href="/assets/js/20.21e22d86.js"><link rel="prefetch" href="/assets/js/21.0a21f463.js"><link rel="prefetch" href="/assets/js/23.92728309.js"><link rel="prefetch" href="/assets/js/24.a934b340.js"><link rel="prefetch" href="/assets/js/25.f19a7630.js"><link rel="prefetch" href="/assets/js/3.c3295fe2.js"><link rel="prefetch" href="/assets/js/4.eec9b412.js"><link rel="prefetch" href="/assets/js/5.20cfe6af.js"><link rel="prefetch" href="/assets/js/6.3fdbcc80.js"><link rel="prefetch" href="/assets/js/7.7429f292.js"><link rel="prefetch" href="/assets/js/8.8bafbea7.js"><link rel="prefetch" href="/assets/js/9.a3529f32.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6e60c68c.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200409124835.png" alt="前端小册" class="logo"> <span class="site-name can-hide">前端小册</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="HTML" class="dropdown-title"><!----> <span class="title" style="display:;">HTML</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/925544/" class="nav-link">基础语法</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="CSS" class="dropdown-title"><!----> <span class="title" style="display:;">CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/1687ff/" class="nav-link">基础语法</a></li></ul></div></div><div class="nav-item"><a href="/pages/db78e2/" class="nav-link">JS</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端工具" class="dropdown-title"><!----> <span class="title" style="display:;">前端工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/5d396b/" class="nav-link">前端需要掌握的命令行</a></li><li class="dropdown-item"><!----> <a href="/pages/52d5c3/" class="nav-link">git扫盲</a></li><li class="dropdown-item"><!----> <a href="/pages/b0b059/" class="nav-link">Babel</a></li><li class="dropdown-item"><!----> <a href="/pages/631196/" class="nav-link">Rollup</a></li></ul></div></div><div class="nav-item"><a href="/pages/037bad/.html" class="nav-link">Node</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端框架" class="dropdown-title"><!----> <span class="title" style="display:;">前端框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/c7313b/" class="nav-link">React</a></li><li class="dropdown-item"><!----> <a href="/pages/eb039d/" class="nav-link">Vue</a></li></ul></div></div><div class="nav-item"><a href="/pages/19ad2a/" class="nav-link">数据结构与算法</a></div> <a href="https://github.com/erdang/erdang.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar" style="display:none;"><!----> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="HTML" class="dropdown-title"><!----> <span class="title" style="display:;">HTML</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/925544/" class="nav-link">基础语法</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="CSS" class="dropdown-title"><!----> <span class="title" style="display:;">CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/1687ff/" class="nav-link">基础语法</a></li></ul></div></div><div class="nav-item"><a href="/pages/db78e2/" class="nav-link">JS</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端工具" class="dropdown-title"><!----> <span class="title" style="display:;">前端工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/5d396b/" class="nav-link">前端需要掌握的命令行</a></li><li class="dropdown-item"><!----> <a href="/pages/52d5c3/" class="nav-link">git扫盲</a></li><li class="dropdown-item"><!----> <a href="/pages/b0b059/" class="nav-link">Babel</a></li><li class="dropdown-item"><!----> <a href="/pages/631196/" class="nav-link">Rollup</a></li></ul></div></div><div class="nav-item"><a href="/pages/037bad/.html" class="nav-link">Node</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端框架" class="dropdown-title"><!----> <span class="title" style="display:;">前端框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/c7313b/" class="nav-link">React</a></li><li class="dropdown-item"><!----> <a href="/pages/eb039d/" class="nav-link">Vue</a></li></ul></div></div><div class="nav-item"><a href="/pages/19ad2a/" class="nav-link">数据结构与算法</a></div> <a href="https://github.com/erdang/erdang.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/pages/19ad2a/" class="sidebar-link">时间复杂度与空间复杂度</a></li><li><a href="/pages/037bad/" aria-current="page" class="active sidebar-link">算法题常用的JS</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/037bad/#一、数组常见的方法" class="sidebar-link">一、数组常见的方法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/037bad/#_1-push" class="sidebar-link">1.push()</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_2-pop" class="sidebar-link">2.pop()</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_3-unshift" class="sidebar-link">3.unshift()</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_4-shift" class="sidebar-link">4.shift()</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_5-concat" class="sidebar-link">5.concat()</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_6-indexof" class="sidebar-link">6.indexOf()</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_7-includes" class="sidebar-link">7.includes()</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_8-join" class="sidebar-link">8.join()</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_9-reverse" class="sidebar-link">9.reverse()</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_10-slice-start-end" class="sidebar-link">10.slice(start,end)</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_11-splice-start-deletecount-item1-item2" class="sidebar-link">11.splice(start,deleteCount,item1,item2....)</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_12-sort" class="sidebar-link">12.sort()</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_13-tostoring" class="sidebar-link">13.toStoring()</a></li></ul></li><li class="sidebar-sub-header"><a href="/pages/037bad/#二、字符串常用方法" class="sidebar-link">二、字符串常用方法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/037bad/#_1-chartat" class="sidebar-link">1.chartAt()</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_2-concat" class="sidebar-link">2.concat()</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_3-indexof-、lastindexof" class="sidebar-link">3.indexOf()、lastIndexOf()</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_4-slice-start-end-同数组" class="sidebar-link">4.slice(start,end) 同数组</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_5-split" class="sidebar-link">5.split()</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_6-substr-substring" class="sidebar-link">6.substr(),substring()</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_7-match" class="sidebar-link">7.match()</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_8-replace" class="sidebar-link">8.replace()</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_9-search" class="sidebar-link">9.search()</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_10-tolowercase-touppercase" class="sidebar-link">10.toLowerCase(),toUpperCase()</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_11-includes-startswith-endswith" class="sidebar-link">11.includes(), startsWith(), endsWith()</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_12-repeat" class="sidebar-link">12.repeat()</a></li></ul></li><li class="sidebar-sub-header"><a href="/pages/037bad/#三、常用遍历方法-高阶函数" class="sidebar-link">三、常用遍历方法&amp;高阶函数</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/037bad/#_1-for" class="sidebar-link">1.for()</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_2-while-do-while" class="sidebar-link">2.while() / do while()</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_3-foreach-self-index-arr-this" class="sidebar-link">3.forEach((self,index,arr)=&gt;{},this)</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_4-for-in" class="sidebar-link">4.for...in</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_5-for-of" class="sidebar-link">5.for...of</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_6-every-some" class="sidebar-link">6.every / some</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_7-filter" class="sidebar-link">7.filter()</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_8-map" class="sidebar-link">8.map()</a></li><li class="sidebar-sub-header"><a href="/pages/037bad/#_9-reduce-prev-cur-index-array-reduceright" class="sidebar-link">9. reduce(prev, cur, index, array) / reduceRight()</a></li></ul></li></ul></li><li><a href="/pages/2820c8/" class="sidebar-link">数据结构</a></li></ul> <div class="sidebar-slot sidebar-slot-bottom"><!-- 正方形 -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="3508773082"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script></div></aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-1cd794fe><div class="articleInfo" data-v-1cd794fe><ul class="breadcrumbs" data-v-1cd794fe><li data-v-1cd794fe><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-1cd794fe></a></li> <li data-v-1cd794fe><span data-v-1cd794fe>数据结构和算法</span></li> <!----> <!----></ul> <div class="info" data-v-1cd794fe><div title="作者" class="author iconfont icon-touxiang" data-v-1cd794fe><a href="https://github.com/erdang" target="_blank" title="作者" class="beLink" data-v-1cd794fe>Er Dang</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-1cd794fe><a href="javascript:;" data-v-1cd794fe>2023-08-09</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABGpJREFUSA3tVVtoXFUU3fvOI53UlmCaKIFmwEhsE7QK0ipFEdHEKpXaZGrp15SINsXUWvBDpBgQRKi0+KKoFeJHfZA+ED9KKoIU2gYD9UejTW4rVIzm0VSTziPzuNu1z507dibTTjL4U/DAzLn3nL3X2o91ziX6f9wMFdh6Jvbm9nNSV0msViVO6tN1Rm7NMu2OpeJ9lWBUTDxrJbYTS0hInuwciu9eLHlFxCLCZEk3MegsJmZ5K/JD6t7FkFdEvGUo1g7qJoG3MHImqRIn8/nzY1K9UPKKiJmtnUqHVE3Gbuay6vJE/N2FEmuxFjW2nUuE0yQXRRxLiTUAzs36zhZvOXJPdX850EVnnLZkB8prodQoM5JGj7Xk2mvC7JB8tG04Ef5PiXtG0UtxupRQSfTnBoCy554x18yJHI6I+G5Eru4LHmPJZEQsrvPUbMiA8G/WgMK7w7I+ez7++o2ANfbrjvaOl1tFMs+htG3IrZH9/hDX1Pr8Tc0UvH8tcX29KzAgIGcEkINyW5BF9x891hw6VYqgJHEk0huccS7vh3C6gTiODL+26huuBtbct8eZnqLML8PkxGYpuPZBqtqwkSjgc4mB5gbgig5i+y0UDK35LMxXisn9xQtK+nd26gTIHsHe/oblK/b29fUmN/8Y+9jAQrnBp56m1LcDlDp9irKTExSKduXJVWSqdBMA08pEJnEIOB3FPPMybu/oeV8zFeYN3xx576Q6RH+VmplE4ncQV5v+5rzSoyOU7PuEAg8g803PwBJ0CExno/jcMbN8tONYeOmHiuUNryvm3fRUy4tMPVLdAGkUhNWuggGrJcXPv+ouCjz0MKUHz1J2/E8IC9nqTabcxgaBYM0hPhD5Y65FsbxRQKxCQrDjDctW7PUM3HuZunFyifSAqEfuzCp48Il24luWUWZoyJCaPR82jE0+kFA643wRFVni4RYSq3ohJO2pZ7B5dO4xkDWbEpossJPLSrPjYID8rS2UHTlvyNxqIGsg674XJJ7vnh5L7PNwC4hh2sjCI96mzszOTpxLF0T7l88Yz7lAuK6OnL8gXLOnTvpzSb22YG8W7us3jSebFHeeqnXRG1vt+MoUM84LQIBmMsCTAcOauTh0T0l0neQK7m2bLMt2mGxU3HYssS0J2cdv5wljlPsrIuZLAG/2DOZIXgCYT8uMGZN+e2kSirfxZOPCsC0f24nTZzspnVn9VePS1Z5vubmAGGXG8ZFno9Hel0yfA5ZPhF7Dh972BQJ2qCpgH67lmWtBYbvk6sz02wjky2vXyz0XErP/kFB619js1BtwfOV4OPRqOQBjy3Qbk18vigUPPSD5ceHnwck7W9bhAqZdd7SuG7w4/P2F/GaJh8c7e9qgow+Q7cGBo+98WsLkuktFqiZabtXuQTu/Y5ETbR0v7tNSFnvrmu6pjdoan2KjMu8q/Hmj1EfCO2ZGfEIbIXKUlw8qaX9/b2oeSJmFksSeT/Fn0V3nSypChh4Gjh74ybO9aeZ/AN2dwciu2/MhAAAAAElFTkSuQmCC">
+          算法题常用的JS
+        </h1>  <div class="theme-vdoing-content content__default"><h2 id="一、数组常见的方法"><a href="#一、数组常见的方法" class="header-anchor">#</a> 一、数组常见的方法</h2> <h3 id="_1-push"><a href="#_1-push" class="header-anchor">#</a> 1.push()</h3> <p>尾部添加，类似压栈,原数组会变</p> <div class="language- extra-class"><pre><code>let arr = [1,2,3]
+arr.push(5);
+consle.log(arr) // 1,2,3,5
+</code></pre></div><h3 id="_2-pop"><a href="#_2-pop" class="header-anchor">#</a> 2.pop()</h3> <p>尾部删除，类似出栈，原数组会变。数组的 push &amp;&amp; pop 可以模拟常见的数据结构栈，先进后出，后进先出</p> <div class="language- extra-class"><pre><code>let arr = [1,2,3];
+arr.pop();
+console.log(arr) //[ 1,2]
+
+//模拟栈
+const stack = [1,2];
+stack.push(3);//压栈
+console.log(stack) //[1,2,3]
+
+const popValue = stack.pop();
+consle.log(popValue) // 3
+consle.log(stack) // [1,2]
+</code></pre></div><h3 id="_3-unshift"><a href="#_3-unshift" class="header-anchor">#</a> 3.unshift()</h3> <p>头部添加，类似入队，原数组会变</p> <div class="language- extra-class"><pre><code>let arr = [1,2,3];
+arr.unshift(0);
+console.log(arr) // [0,1,2,3]
+</code></pre></div><h3 id="_4-shift"><a href="#_4-shift" class="header-anchor">#</a> 4.shift()</h3> <p>头部删除，原数组会变，push &amp;&amp; shift 可以模拟常见的数据结构队列，先进先出，后进后出</p> <div class="language- extra-class"><pre><code>const arr = [1,2,3]
+const shfitVal = arr.shift();
+console.log(shfitVal) //1
+consle.log(arr) //[2,3]
+
+//模拟队列
+
+const queue = [0,1]
+queue.push(2);
+consle.log(arr) //[0,1,2]
+
+const shiftVal = queue.shift();
+console.log(shiftVal) //0
+consle.log(arr) //[1,2]
+</code></pre></div><h3 id="_5-concat"><a href="#_5-concat" class="header-anchor">#</a> 5.concat()</h3> <p>concat 会在当前数组尾部拼接传入的数组，返回一个新的数组，原数组不变</p> <div class="language- extra-class"><pre><code>const arr = [1,2,3]
+const arr2 = arr.concat([4,5])
+console.log(arr) // [1,2,3]
+console.log(arr2) // [1,2,3,4,5]
+</code></pre></div><h3 id="_6-indexof"><a href="#_6-indexof" class="header-anchor">#</a> 6.indexOf()</h3> <p>在数组中寻找该值，找到返回其下标，找不到返回-1</p> <div class="language- extra-class"><pre><code>const arr = [ 1,2,3,4]
+consle.log(arr.indexOf(7)) // -1
+consle.log(arr.indexOf(2)) // 1
+</code></pre></div><h3 id="_7-includes"><a href="#_7-includes" class="header-anchor">#</a> 7.includes()</h3> <p>在数组中寻找该值，找到返回 true,没找到返回 false</p> <div class="language- extra-class"><pre><code>const arr = [1,2,3]
+consle.log(arr.includes(5)) //false
+consle.log(arr.includes(1)) //true
+</code></pre></div><h3 id="_8-join"><a href="#_8-join" class="header-anchor">#</a> 8.join()</h3> <p>将数组转化为字符串，并返回该字符串，不传值则默认逗号分开，原数组不变</p> <div class="language- extra-class"><pre><code>const arr = [1,2,3]
+console.log(arr.join()) // 1,2,3
+console.log(arr) //[ 1,2,3]
+</code></pre></div><h3 id="_9-reverse"><a href="#_9-reverse" class="header-anchor">#</a> 9.reverse()</h3> <p>翻转原数组，并返回翻转的数组，原数组改变</p> <div class="language- extra-class"><pre><code>const arr = [1,2,3]
+console.log(arr.reverse())// [3,2,1]
+console.log(arr) //[3,2,1]
+</code></pre></div><h3 id="_10-slice-start-end"><a href="#_10-slice-start-end" class="header-anchor">#</a> 10.slice(start,end)</h3> <p>从 start 开始截取到 end，不包括 end</p> <div class="language- extra-class"><pre><code>const arr = [1,2,3]
+consle.log(arr.slice(1,2)) //[2,3]
+consle.log(arr) // [1,2,3]
+
+//如果start是负数，则start = max(length + start,0)
+//如果 end 是负数，则 end = max(length + end,0)
+//如果没有参数，则返回原数组
+
+arr.slice(0) // [1,2,3] 从start 到结束
+</code></pre></div><h3 id="_11-splice-start-deletecount-item1-item2"><a href="#_11-splice-start-deletecount-item1-item2" class="header-anchor">#</a> 11.splice(start,deleteCount,item1,item2....)</h3> <ul><li><p>start 开始的位置</p></li> <li><p>deleteCount 要截取的个数</p></li> <li><p>itme1,itme2.... 添加的元素</p></li> <li><p>改变原数组</p></li> <li><p>如果 deleteCount=0，表示不删除元素，如果 item1,item2.... 没有，表示从 start 开始截取到结束，如果有，表示从 start 开始添加</p></li> <li><p>返回值为被删除的元素组成的数组，如果没删除返回空数组</p> <div class="language- extra-class"><pre><code>  const arr3 = [1,2,3,4,5,6,7,&quot;f1&quot;,&quot;f2&quot;]
+  const arr4 = arr3.splice(2,3)
+  console.log(arr4) // [3,4,5]
+  console.log(arr3) // [1,2,6,7,&quot;f1&quot;,&quot;f2&quot;]
+  const arr5 = arr3.splice(2, 0, &quot;wu&quot;, &quot;leon&quot;);
+  // 从第2位开始删除0个元素，插入&quot;wu&quot;,&quot;leon&quot;
+  console.log(arr5); // [] 返回空数组
+  console.log(arr3); // [1, 2, &quot;wu&quot;, &quot;leon&quot;, 6, 7, &quot;f1&quot;, &quot;f2&quot;]; 原始数组被改变
+
+  const arr6 = arr3.splice(2, 3, &quot;xiao&quot;, &quot;long&quot;);
+  // 从第 2 位开始删除 3 个元素，插入&quot;xiao&quot;, &quot;long&quot;
+  console.log(arr6); // [&quot;wu&quot;, &quot;leon&quot;, 6]
+  console.log(arr3); //[ 1, 2, &quot;xiao&quot;, &quot;long&quot;, 7, &quot;f1&quot;, &quot;f2&quot;]
+
+  const arr7 = arr3.splice(2); // 从第三个元素开始删除所有的元素
+  console.log(arr7);// [&quot;xiao&quot;, &quot;long&quot;, 7, &quot;f1&quot;, &quot;f2&quot;]
+  console.log(arr3); // [1, 2]
+</code></pre></div></li></ul> <h3 id="_12-sort"><a href="#_12-sort" class="header-anchor">#</a> 12.sort()</h3> <ul><li><p>对数组的元素进行排序，并返回数组。</p></li> <li><p>默认情况下，sort()方法按字符串升序排列数组项，sort 方法会调用每个数组项的 toString()方法，然后比较得到的字符串排序，返回经过排序之后的数组，而原数组顺序也发生改变</p></li> <li><p>接受一个比较函数作为参数，以便指定哪个值在哪个值的前面。比较函数接收两个参数，如果第一个参数应该位于第二个参数之前则返回一个负数，如果两个参数相等则返回 0，如果第一个参数应该位于第二个参数之后则返回一个正数</p> <div class="language- extra-class"><pre><code>  const arr = [1, 2, 3]
+  arr.sort((a, b) =&gt; b - a)
+  console.log(arr) // [3, 2, 1]
+</code></pre></div></li></ul> <h3 id="_13-tostoring"><a href="#_13-tostoring" class="header-anchor">#</a> 13.toStoring()</h3> <p>将数组转化成字符串，并返回该字符串，逗号隔开，原数组不变。</p> <div class="language- extra-class"><pre><code>const arr = [1, 2, 3, 4, 5]
+console.log(arr.toString()) // ‘1, 2, 3, 4, 5’
+console.log(arr) // [1, 2, 3, 4, 5]
+</code></pre></div><h2 id="二、字符串常用方法"><a href="#二、字符串常用方法" class="header-anchor">#</a> 二、字符串常用方法</h2> <h3 id="_1-chartat"><a href="#_1-chartat" class="header-anchor">#</a> 1.chartAt()</h3> <p>返回指定索引位置处的字符。类似于数组用中括号获取相应下标位置的数据。</p> <div class="language- extra-class"><pre><code>var str = 'abcdefg'
+console.log(str.charAt(2)) // 输出 'c'
+console.log(str[2]) // 输出 'c'
+</code></pre></div><h3 id="_2-concat"><a href="#_2-concat" class="header-anchor">#</a> 2.concat()</h3> <p>类似数组的 concat()，用来返回一个合并拼接两个或两个以上字符串。原字符串不变。</p> <div class="language- extra-class"><pre><code>const str1 = 'abcdefg'
+const str2 = '1234567'
+const str3 = str1.concat(str2)
+console.log(str3) // 输出 'abcdefg1234567'
+</code></pre></div><h3 id="_3-indexof-、lastindexof"><a href="#_3-indexof-、lastindexof" class="header-anchor">#</a> 3.indexOf()、lastIndexOf()</h3> <p><code>indexOf</code>,返回一个字符在字符串中首次出现的位置,<code>lastIndexOf</code>返回一个字符在字符串中最后一次出现的位置。</p> <div class="language- extra-class"><pre><code>const str = 'abcdcefcg'
+console.log(str.indexOf('c')) // 输出 '2'
+console.log(str.lastIndexOf('c')) // 输出 '7'
+</code></pre></div><h3 id="_4-slice-start-end-同数组"><a href="#_4-slice-start-end-同数组" class="header-anchor">#</a> 4.slice(start,end) 同数组</h3> <p>提取字符串的片断，并把提取的字符串作为新的字符串返回出来。原字符串不变。</p> <div class="language- extra-class"><pre><code>const str = 'abcdefg'
+console.log(str.slice()) // 输出 'abcdefg', 不传递参数默认复制整个字符串
+console.log(str.slice(1)) // 输出 'bcdefg',传递一个，则为提取的起点，然后到字符串结尾
+console.log(str.slice(2, str.length-1)) // 输出'cdef',传递两个，为提取的起始点和结束点
+</code></pre></div><h3 id="_5-split"><a href="#_5-split" class="header-anchor">#</a> 5.split()</h3> <p>使用指定的分隔符将一个字符串拆分为多个子字符串数组并返回，原字符串不变 默认逗号</p> <div class="language- extra-class"><pre><code>const str = 'A*B*C*D*E*F*G'
+console.log(str.split('*')) // 输出 [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;, &quot;G&quot;]
+</code></pre></div><h3 id="_6-substr-substring"><a href="#_6-substr-substring" class="header-anchor">#</a> 6.substr(),substring()</h3> <ul><li><p>这两个方法的功能都是截取一个字符串的片段，并返回截取的字符串。</p></li> <li><p>substr 和 substring 这两个方法不同的地方就在于参数二，substr 的参数二是截取返回出来的这个字符串指定的长度，substring 的参数二是截取返回这个字符串的结束点，并且不包含这个结束点。而它们的参数一，都是一样的功能，截取的起始位置。</p></li> <li><p>注意事项：substr 的参数二如果为 0 或者负数，则返回一个空字符串，如果未填入，则会截取到字符串的结尾去。substring 的参数一和参数二为 NAN 或者负数，那么它将被替换为 0。</p> <div class="language- extra-class"><pre><code>  const str = 'ABCDEFGHIJKLMN'
+  console.log(str.substr(2)) // 输出 'CDEFGHIJKLMN'
+  console.log(str.substring(2)) // 输出 'CDEFGHIJKLMN'
+
+  console.log(str.substr(2, 9)) // 输出 'CDEFGHIJK'
+  console.log(str.substring(2, 9)) // 输出 'CDEFGHI'
+</code></pre></div></li></ul> <h3 id="_7-match"><a href="#_7-match" class="header-anchor">#</a> 7.match()</h3> <p>match()方法可在字符串内检索指定的值，或找到一个或多个正则表达式的匹配，并返回一个包含该搜索结果的数组。</p> <div class="language- extra-class"><pre><code>const str = '2018年结束了，2019年开始了，2020年就也不远了'
+const reg = /\d+/g  // 这里是定义匹配规则，匹配字符串里的1到多个数字
+console.log(str.match(reg))  // 输出符合匹配规则的内容，以数组形式返回 ['2018', '2019', '2020']
+console.log(str.match('20'))  // 不使用正则 [&quot;20&quot;, index: 0, input: &quot;2018年结束了，2019年开始了&quot;]
+</code></pre></div><p>注意事项:如果 match 方法没有找到匹配，将返回 null。如果找到匹配，则 match 方法会把匹配到以数组形式返回，如果正则规则未设置全局修饰符 g，则 match 方法返回的数组有两个特性：input 和 index。input 属性包含整个被搜索的字符串。index 属性包含了在整个被搜索字符串中匹配的子字符串的位置。</p> <h3 id="_8-replace"><a href="#_8-replace" class="header-anchor">#</a> 8.replace()</h3> <p>replace 接收两个参数，参数一是需要替换掉的字符或者一个正则的匹配规则，参数二，需要替换进去的字符，仔实际的原理当中，参数二，你可以换成一个回调函数。</p> <div class="language- extra-class"><pre><code>const str = '2018年结束了，2019年开始了，2020年就也不远了'
+const rex = /\d+/g  // 这里是定义匹配规则，匹配字符串里的1到多个数字
+const str1 = str.replace(rex, '****')
+console.log(str1) // 输出：&quot;****年结束了，****年开始了,****年也不远了&quot;
+const str2 = str.replace(rex, function(item){
+    console.log(arguments)  // 看下面的图片
+    const arr = ['零', '壹', '贰', '叁', '肆', '伍', '陆', '柒', '捌', '玖']
+    let newStr = ''
+    item.split('').map(function(i){
+            newStr += arr[i]
+    })
+    return newStr
+})
+console.log(str2) // 输出：贰零壹捌年结束了，贰零壹玖年开始了,贰零贰零年也不远了
+</code></pre></div><h3 id="_9-search"><a href="#_9-search" class="header-anchor">#</a> 9.search()</h3> <p>在目标字符串中搜索与正则规则相匹配的字符，搜索到，则返回第一个匹配项在目标字符串当中的位置，没有搜索到则返回一个-1。</p> <div class="language- extra-class"><pre><code>const str = '2018年结束了，2019年开始了，2020年就也不远了'
+const reg = /\d+/i  // 这里是定义匹配规则,匹配字符串里的1到多个数字
+console.log(str.search(reg)) // 输出 0  这里搜索到的第一项是从位置0开始的
+</code></pre></div><h3 id="_10-tolowercase-touppercase"><a href="#_10-tolowercase-touppercase" class="header-anchor">#</a> 10.toLowerCase(),toUpperCase()</h3> <p>toLowerCase 把字母转换成小写，toUpperCase()则是把字母转换成大写。</p> <h3 id="_11-includes-startswith-endswith"><a href="#_11-includes-startswith-endswith" class="header-anchor">#</a> 11.includes(), startsWith(), endsWith()</h3> <p>includes、startsWith、endsWith，es6 的新增方法，includes 用来检测目标字符串对象是否包含某个字符，返回一个布尔值，startsWith 用来检测当前字符是否是目标字符串的起始部分，相对的 endwith 是用来检测是否是目标字符串的结尾部分。</p> <div class="language- extra-class"><pre><code>const str = 'Excuse me, how do I get to park road?'
+console.log(str.includes('how')) // 输出：true
+console.log(str.startsWith('Excuse')) // 输出： true
+console.log(str.endsWith('?')) // 输出： true
+</code></pre></div><h3 id="_12-repeat"><a href="#_12-repeat" class="header-anchor">#</a> 12.repeat()</h3> <p>返回一个新的字符串对象，新字符串等于重复了指定次数的原始字符串。接收一个参数，就是指定重复的次数。原字符串不变。</p> <div class="language- extra-class"><pre><code>const str = 'http'
+const str2 = str.repeat(3)
+console.log(str) // 输出：'http'
+console.log(str2) // 输出：'httphttphttp'
+</code></pre></div><h2 id="三、常用遍历方法-高阶函数"><a href="#三、常用遍历方法-高阶函数" class="header-anchor">#</a> 三、常用遍历方法&amp;高阶函数</h2> <h3 id="_1-for"><a href="#_1-for" class="header-anchor">#</a> 1.for()</h3> <p>最常用的 for 循环，经常用的数组遍历，也可以遍历字符串。</p> <div class="language- extra-class"><pre><code>const arr = [1, 2, 3]
+const str = 'abc'
+for (let i = 0; i &lt; arr.length; i++) {
+    console.log(arr[i])
+    console.log(str[i])
+}
+</code></pre></div><h3 id="_2-while-do-while"><a href="#_2-while-do-while" class="header-anchor">#</a> 2.while() / do while()</h3> <p>while、do while 主要的功能是，当满足 while 后边所跟的条件时，来执行相关业务。这两个的区别是，while 会先判断是否满足条件，然后再去执行花括号里面的任务，而 do while 则是先执行一次花括号中的任务，再去执行 while 条件，判断下次还是否再去执行 do 里面的操作。也就是说 do while 至少会执行一次操作.</p> <div class="language- extra-class"><pre><code>while(条件){
+    执行...
+}
+------------
+do{
+    执行...
+}
+while(条件)
+</code></pre></div><h3 id="_3-foreach-self-index-arr-this"><a href="#_3-foreach-self-index-arr-this" class="header-anchor">#</a> 3.forEach((self,index,arr)=&gt;{},this)</h3> <p>数组中的每一项运行给定函数，这个方法没有返回值</p> <ul><li><p>接受一个必须的回调函数参数，第二个参数还可以接受一个可选的上下文参数(改变回调函数里面的 this 指向)</p> <div class="language- extra-class"><pre><code>  const arr = [5,1,3,7,4]
+  arr.forEach((item, index) =&gt; {
+  if (item &lt; 2) return
+      console.log(`索引：${index}，数值：${item}`)
+      arr[5] = 0
+  })
+  console.log(arr)
+
+  for循环和forEach 的区别,
+
+  for :
+      - 一个可遍历迭代对象的方法，
+      - 可以控制循环起点,
+      - 可中断 break return continue 对函数进行中断或跳出循环,
+  forEach:
+      -是一个迭代器，不能中断,return 并不会报错，但是不会生效
+  性能比较：for &gt; forEach &gt; map
+
+  for循环没有额外的函数调用栈和上下文，所以它的实现最为简单。
+  forEach：对于forEach来说，它的函数签名中包含了参数和上下文，所以性能会低于 for 循环。
+  map：map 最慢的原因是因为 map 会返回一个新的数组，数组的创建和赋值会导致分配内存空间，因此会带来较大的性能开销
+</code></pre></div></li></ul> <h3 id="_4-for-in"><a href="#_4-for-in" class="header-anchor">#</a> 4.for...in</h3> <ul><li><p>for...in 是 ES5 标准， 此方法遍历数组效率低，主要是用来循环遍历对象的属性。</p></li> <li><p>遍历数组的缺点：数组的下标 index 值是数字，for-in 遍历的 index 值&quot;0&quot;,&quot;1&quot;,&quot;2&quot;等是字符串。</p></li> <li><p>Object.defineProperty，建立的属性，默认不可枚举。</p> <div class="language- extra-class"><pre><code>  const foo = {
+      name: 'bar',
+      sex: 'male'
+  }
+  Object.defineProperty(foo, &quot;age&quot;, { value : 18 })
+  for(const key in foo){
+      console.log(`可枚举属性：${key}`)
+  }
+  console.log(`age属性：${foo.age}`)
+</code></pre></div></li></ul> <h3 id="_5-for-of"><a href="#_5-for-of" class="header-anchor">#</a> 5.for...of</h3> <p>for…of 是 ES6 新增的方法，但是 for…of 不能去遍历普通的对象，for…of 的好处是可以使用 break 跳出循环。</p> <ul><li><p>for-of 这个方法避开了 for-in 循环的所有缺陷</p></li> <li><p>与 forEach()不同的是，它可以正确响应 break、continue 和 return 语句</p></li> <li><p>for-of 循环不仅支持数组，还支持大多数类数组对象，例如 DOM NodeList 对象。</p></li> <li><p>for-of 循环也支持字符串遍历</p></li></ul> <p>for...in 和 for...of 区别？</p> <p>简单来说，for of 遍历键值对的键，for in 遍历键值对的值</p> <p>（1）for…in 用于可枚举数据，如对象、数组、字符串
+（2）for…of 用于可迭代数据，如数组、字符串、Map、Set</p> <h3 id="_6-every-some"><a href="#_6-every-some" class="header-anchor">#</a> 6.every / some</h3> <p>返回一个布尔值。当我们需要判定数组中的元素是否都满足某些条件时，可以使用 every / some。
+这两个的区别是，every 会去遍历判断是否数组中的每一项都满足条件，遇到不满足的直接停止遍历返回 false，
+而 some 则是当某一项满足条件时停止遍历，返回 true。</p> <div class="language- extra-class"><pre><code>// every
+const foo = [5,1,3,7,4].every((item, index) =&gt; {
+    console.log(`索引：${index}，数值：${item}`)
+    return item &gt; 2
+})
+console.log(foo)
+// every 打印：
+// 索引：0，数值：5
+// 索引：1，数值：1
+// false
+
+// some
+const foo = [5,1,3,7,4].some((item, index) =&gt; {
+    console.log(`索引：${index}，数值：${item}`)
+    return item &gt; 2
+})
+console.log(foo)
+// some 打印：
+// 索引：0，数值：5
+// true
+</code></pre></div><h3 id="_7-filter"><a href="#_7-filter" class="header-anchor">#</a> 7.filter()</h3> <ul><li><p>filter 方法用于过滤数组成员，满足条件的成员组成一个新数组返回。</p></li> <li><p>它的参数是一个函数，所有数组成员依次执行该函数，返回结果为 true 的成员组成一个新数组返回。</p></li> <li><p>该方法不会改变原数组。</p> <div class="language- extra-class"><pre><code>  const foo = [5,1,3,7,4].filter((item,index) =&gt; {
+      console.log(`索引：${index}，数值：${item}`)
+      return item &gt; 2
+  })
+  console.log(foo)
+  // 打印结果：
+  // 索引：0，数值：5
+  // 索引：1，数值：1
+  // 索引：2，数值：3
+  // 索引：3，数值：7
+  // 索引：4，数值：4
+  // [5, 3, 7, 4]
+</code></pre></div></li></ul> <h3 id="_8-map"><a href="#_8-map" class="header-anchor">#</a> 8.map()</h3> <ul><li><p>map 即是 “映射”的意思 ，原数组被“映射”成对应新数组。</p></li> <li><p>map：支持 return，相当与原数组克隆了一份，把克隆的每项改变了，也不影响原数组。</p> <div class="language- extra-class"><pre><code>  const foo = [5,1,3,7,4].map((item,index) =&gt; {
+      console.log(`索引：${index}，数值：${item}`)
+      return item + 2
+  })
+  console.log(foo)
+</code></pre></div></li></ul> <h3 id="_9-reduce-prev-cur-index-array-reduceright"><a href="#_9-reduce-prev-cur-index-array-reduceright" class="header-anchor">#</a> 9. reduce(prev, cur, index, array) / reduceRight()</h3> <p>reduce 从左到右将数组元素做“叠加”处理，返回一个值。reduceRight 从右到左。</p> <div class="language- extra-class"><pre><code>var a = [1,2,3,4,5];
+var sum = a.reduce(function(x,y){return x+y},0);//数组求和
+var product = a.reduce(function(x,y){return x*y},1);//数组求积
+var max = a.reduce(function(x,y){return (x&gt;y)?x:y;});//求最大值
+</code></pre></div><p>以上遍历方法的区别：</p> <div class="language- extra-class"><pre><code>一：map()，forEach()，filter()循环的共同之处：
+1.forEach，map，filter循环中途是无法停止的，总是会将所有成员遍历完。
+2.他们都可以接受第二个参数，用来绑定回调函数内部的 this 变量，将回调函数内部的 this 对象，指向第二个参数，间接操作这个参数（一般是数组）。
+
+二：map()、filter()循环和forEach()循环的不同：
+forEach 循环没有返回值； map，filter 循环有返回值。
+
+三：map()和filter()都会跳过空位，for 和 while 不会
+
+四：some()和every():
+some()只要有一个是true，便返回true；而every()只要有一个是false，便返回false.
+
+五：reduce()，reduceRight()：
+reduce是从左到右处理（从第一个成员到最后一个成员），reduceRight则是从右到左（从最后一个成员到第一个成员）。
+
+六：Object对象的两个遍历 Object.keys 与 Object.getOwnPropertyNames：
+他们都是遍历对象的属性，也是接受一个对象作为参数，返回一个数组，包含了该对象自身的所有属性名。但Object.keys不能返回不可枚举的属性；Object.getOwnPropertyNames能返回不可枚举的属性
+</code></pre></div></div></div> <div class="page-slot page-slot-bottom"><!-- 横向自适应 -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="6620245489"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script></div> <div class="page-edit"><!----> <!----> <!----></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/19ad2a/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">时间复杂度与空间复杂度</div></a> <a href="/pages/2820c8/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">数据结构</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/19ad2a/" class="prev">时间复杂度与空间复杂度</a></span> <span class="next"><a href="/pages/2820c8/">数据结构</a>→
+      </span></p></div></div></div> <!----></main></div> <div class="footer"><div class="icons"><a href="mailto:924064382@qq.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/erdang" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://music.163.com/#/playlist?id=755597173" title="听音乐" target="_blank" class="iconfont icon-erji"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2021-2023
+    <span>Er Dang | MIT License</span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <div class="custom-html-window custom-html-window-rb" style="display:;"><div class="custom-wrapper"><i class="close-but">×</i> <div><!-- 固定160*160px -->
+      <ins class="adsbygoogle"
+          style="display:inline-block;width:160px;height:160px"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="8377369658"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+      </div></div></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.c3eaab60.js" defer></script><script src="/assets/js/2.0d541d74.js" defer></script><script src="/assets/js/22.ed465c56.js" defer></script>
+  </body>
+</html>

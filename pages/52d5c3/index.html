@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>一篇git扫盲 | 前端小册</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/img/favicon.ico">
+    <script data-ad-client="ca-pub-7828333725993554" async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta name="description" content="个人知识笔记">
+    <meta name="keywords" content="vuepress,theme,blog,vdoing">
+    <meta name="theme-color" content="#11a8cd">
+    <link rel="preload" href="/assets/css/0.styles.6e60c68c.css" as="style"><link rel="preload" href="/assets/js/app.c3eaab60.js" as="script"><link rel="preload" href="/assets/js/2.0d541d74.js" as="script"><link rel="preload" href="/assets/js/9.a3529f32.js" as="script"><link rel="prefetch" href="/assets/js/10.945953ec.js"><link rel="prefetch" href="/assets/js/11.fdd192f9.js"><link rel="prefetch" href="/assets/js/12.f930e6cf.js"><link rel="prefetch" href="/assets/js/13.83f7fdb4.js"><link rel="prefetch" href="/assets/js/14.d1f6a6d2.js"><link rel="prefetch" href="/assets/js/15.a3fc3a4c.js"><link rel="prefetch" href="/assets/js/16.1af45818.js"><link rel="prefetch" href="/assets/js/17.34452123.js"><link rel="prefetch" href="/assets/js/18.c2709a46.js"><link rel="prefetch" href="/assets/js/19.eda02219.js"><link rel="prefetch" href="/assets/js/20.21e22d86.js"><link rel="prefetch" href="/assets/js/21.0a21f463.js"><link rel="prefetch" href="/assets/js/22.ed465c56.js"><link rel="prefetch" href="/assets/js/23.92728309.js"><link rel="prefetch" href="/assets/js/24.a934b340.js"><link rel="prefetch" href="/assets/js/25.f19a7630.js"><link rel="prefetch" href="/assets/js/3.c3295fe2.js"><link rel="prefetch" href="/assets/js/4.eec9b412.js"><link rel="prefetch" href="/assets/js/5.20cfe6af.js"><link rel="prefetch" href="/assets/js/6.3fdbcc80.js"><link rel="prefetch" href="/assets/js/7.7429f292.js"><link rel="prefetch" href="/assets/js/8.8bafbea7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6e60c68c.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200409124835.png" alt="前端小册" class="logo"> <span class="site-name can-hide">前端小册</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="HTML" class="dropdown-title"><!----> <span class="title" style="display:;">HTML</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/925544/" class="nav-link">基础语法</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="CSS" class="dropdown-title"><!----> <span class="title" style="display:;">CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/1687ff/" class="nav-link">基础语法</a></li></ul></div></div><div class="nav-item"><a href="/pages/db78e2/" class="nav-link">JS</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端工具" class="dropdown-title"><!----> <span class="title" style="display:;">前端工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/5d396b/" class="nav-link">前端需要掌握的命令行</a></li><li class="dropdown-item"><!----> <a href="/pages/52d5c3/" aria-current="page" class="nav-link router-link-exact-active router-link-active">git扫盲</a></li><li class="dropdown-item"><!----> <a href="/pages/b0b059/" class="nav-link">Babel</a></li><li class="dropdown-item"><!----> <a href="/pages/631196/" class="nav-link">Rollup</a></li></ul></div></div><div class="nav-item"><a href="/pages/52d5c3/.html" class="nav-link">Node</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端框架" class="dropdown-title"><!----> <span class="title" style="display:;">前端框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/c7313b/" class="nav-link">React</a></li><li class="dropdown-item"><!----> <a href="/pages/eb039d/" class="nav-link">Vue</a></li></ul></div></div><div class="nav-item"><a href="/pages/19ad2a/" class="nav-link">数据结构与算法</a></div> <a href="https://github.com/erdang/erdang.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar" style="display:none;"><!----> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="HTML" class="dropdown-title"><!----> <span class="title" style="display:;">HTML</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/925544/" class="nav-link">基础语法</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="CSS" class="dropdown-title"><!----> <span class="title" style="display:;">CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/1687ff/" class="nav-link">基础语法</a></li></ul></div></div><div class="nav-item"><a href="/pages/db78e2/" class="nav-link">JS</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端工具" class="dropdown-title"><!----> <span class="title" style="display:;">前端工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/5d396b/" class="nav-link">前端需要掌握的命令行</a></li><li class="dropdown-item"><!----> <a href="/pages/52d5c3/" aria-current="page" class="nav-link router-link-exact-active router-link-active">git扫盲</a></li><li class="dropdown-item"><!----> <a href="/pages/b0b059/" class="nav-link">Babel</a></li><li class="dropdown-item"><!----> <a href="/pages/631196/" class="nav-link">Rollup</a></li></ul></div></div><div class="nav-item"><a href="/pages/52d5c3/.html" class="nav-link">Node</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端框架" class="dropdown-title"><!----> <span class="title" style="display:;">前端框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/c7313b/" class="nav-link">React</a></li><li class="dropdown-item"><!----> <a href="/pages/eb039d/" class="nav-link">Vue</a></li></ul></div></div><div class="nav-item"><a href="/pages/19ad2a/" class="nav-link">数据结构与算法</a></div> <a href="https://github.com/erdang/erdang.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>git</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/52d5c3/" aria-current="page" class="active sidebar-link">一篇git扫盲</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/52d5c3/#git-优势" class="sidebar-link">git 优势</a></li><li class="sidebar-sub-header"><a href="/pages/52d5c3/#git-配置" class="sidebar-link">git 配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/52d5c3/#关于忽略的配置" class="sidebar-link">关于忽略的配置</a></li><li class="sidebar-sub-header"><a href="/pages/52d5c3/#ssh-配置" class="sidebar-link">SSH 配置</a></li></ul></li><li class="sidebar-sub-header"><a href="/pages/52d5c3/#重要概念" class="sidebar-link">重要概念</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/52d5c3/#【常用术语】" class="sidebar-link">【常用术语】</a></li><li class="sidebar-sub-header"><a href="/pages/52d5c3/#【-git-目录】" class="sidebar-link">【.git 目录】</a></li><li class="sidebar-sub-header"><a href="/pages/52d5c3/#【head-是啥-】" class="sidebar-link">【HEAD 是啥？】</a></li></ul></li><li class="sidebar-sub-header"><a href="/pages/52d5c3/#【git-基础操作】" class="sidebar-link">【git 基础操作】</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/pages/52d5c3/#git-clone" class="sidebar-link">git clone</a></li><li class="sidebar-sub-header"><a href="/pages/52d5c3/#git-init" class="sidebar-link">git init</a></li><li class="sidebar-sub-header"><a href="/pages/52d5c3/#git-add" class="sidebar-link">git add</a></li><li class="sidebar-sub-header"><a href="/pages/52d5c3/#git-commit" class="sidebar-link">git commit</a></li><li class="sidebar-sub-header"><a href="/pages/52d5c3/#git-log-与-git-reflog" class="sidebar-link">git log 与 git reflog</a></li><li class="sidebar-sub-header"><a href="/pages/52d5c3/#git-diff-查看不同" class="sidebar-link">git diff 查看不同</a></li><li class="sidebar-sub-header"><a href="/pages/52d5c3/#git-status-查看状态" class="sidebar-link">git status 查看状态</a></li><li class="sidebar-sub-header"><a href="/pages/52d5c3/#git-reset" class="sidebar-link">git reset</a></li><li class="sidebar-sub-header"><a href="/pages/52d5c3/#分支-git-branch-和-git-checkout" class="sidebar-link">分支 git branch 和 git checkout</a></li><li class="sidebar-sub-header"><a href="/pages/52d5c3/#合并分支-解决冲突" class="sidebar-link">合并分支 (解决冲突)</a></li><li class="sidebar-sub-header"><a href="/pages/52d5c3/#git-rebase" class="sidebar-link">git rebase</a></li><li class="sidebar-sub-header"><a href="/pages/52d5c3/#git-fetch-与-git-pull" class="sidebar-link">git fetch 与 git pull</a></li><li class="sidebar-sub-header"><a href="/pages/52d5c3/#git-push" class="sidebar-link">git push</a></li><li class="sidebar-sub-header"><a href="/pages/52d5c3/#git-remote-命令" class="sidebar-link">git remote 命令</a></li><li class="sidebar-sub-header"><a href="/pages/52d5c3/#删除" class="sidebar-link">删除</a></li></ul></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>命令行</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/5d396b/" class="sidebar-link">前端应该掌握的命令行</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Babel</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/b0b059/" class="sidebar-link">Babel</a></li><li><a href="/pages/f05617/" class="sidebar-link">Babel原理</a></li><li><a href="/pages/50e319/" class="sidebar-link">AST</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Rollup</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/631196/" class="sidebar-link">rollup前置学习基础</a></li><li><a href="/pages/56d8db/" class="sidebar-link">rollup</a></li><li><a href="/pages/1e2662/" class="sidebar-link">rollup搭建工具库</a></li></ul></section></li></ul> <div class="sidebar-slot sidebar-slot-bottom"><!-- 正方形 -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="3508773082"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script></div></aside> <div><main class="page"><div class="theme-vdoing-wrapper "><!----> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABKFJREFUSA3tVl1oFVcQnrMbrak3QUgkya1akpJYcrUtIqW1JvFBE9LiQ5v6JmJpolbMg32rVrhgoYK0QiMY6i9Y6EMaW5D+xFJaTYItIuK2Kr3+BJNwkxBj05sQY3b3nM6cs2dv9t7NT/vQJw/sndk5M/PNzJkzewGerP+pAmy+ON8lLzUJgA8ZYxYIYZmGYRnctDaWvJJAmTtfP1pvXsBCCPP8QFcCaRkZYACgDZFO4stNIcBCajEOlmmC9XpJ9bAGCaPaPmzPl32dvLSVu3BWCTQs0XQQ6g0DYgwLIoAZbBCdW/i+781o1VVlm/410mw4h06Y7bIPHNyWDyL4FHkX03Q8SrzNhZTZriieckWt7cL6MM85YcLpsi/7O9/iXFT6MswI0DmmpkSaJ0qLxFIm3+i1THHB3zmBH3PYx9CcykcLOeQVVa7QtdxTgQgEleX2AjHYfwA+2ddV77ruGoJUbhGDI09YSNXyMpUt5ylOzxgbUmtOp7NmbNt8v3arjTBfYELmLUV+M+nSawNNAUqpT3ClJWg5I3BLT+cGW/DXNGCa6tx1aakCGEigArTn4TDIPdrXXYKCZNrHLMCOEPvHBlLQ99s9eHB7EB6NTki73CVPQ2F5MSx/uRQixfmq7rK0wYD8w8E905bnPDfwoWs/rfv93NWN/ZfvwsLIU7A09gxECyISeGJkHAau98L97tuw7NXnoPyNF8FcYGLGKsOs0mN3OEyec9esGW/ZEl945dTP34wlR2FZVQWU1q0Cw8Tr7p+hgLLNL0FPxx/Q35mA8aEUrH6nCgwEl0tn7wUiZYJnNRh6DK4UH/k0lfyrsBKdPVv/AriGIQcEDQZ65LBAGe2Rzui9Ybjz7XUppz1/uKBbyVPGkN3ZAeC6hr0x7Nr38N5+EqkoOm17xpoqR9ohQF55ERSvr4Dkr3chNfC3DMzGJlNBElW8w9nsGQvhNGIzDkXzCg8cLK951xHsFBlTJspJNi3ZFIMF2AeDV3q8DNOB+YHi6QTrChDIWDBRi5U5f+ZMfJLu3ccrqxtdxk4SKH336LFxSmkqefwU5T8fhdSdQf9IVKD6aNiwI/hnmcAZ91isYMJIaCUCx9W098+LgruikeTqzqqxKPUwqJyCPJiyemVVZBOijDGjD38Os0jOiSPL1z3SPjXNANbiNPXAdzTfukjjuknNBbyz3nwgTd3AVFqUJ5hpHlq9MveLnWwttUfoygBmvVjuikxND3znrhsELnZk7k+OjIGxeNEkomyLVta0xxn+HZhjBc4YZ/AFjHjz9u3xRZl2BN4aq9nFwWh16IrQ1aHHEd3j1+4/dB9OtH4e29A2H1DyHQRmOSfQZ1Fy7MHBTGB6J/Djq6p3OxyO2cB+4Car7v/o3GXgfAkj23+x9ID1Teoamo/SXcbvSf2PX7Vc8DdCmE1vN9di+32P9/5YR3vLnhCVGUWBjEkr3yh4H8v9CzmsbdhzOKzsJKM90iFdaTMjRPhGVsakRvOaRidljo6H6G7j+ctrJpsP+4COhDIl0La2+FS4+5mlocBaXY5QnGZysIBYoeSsl5qQzrSj/cgNrfuEzlWBfwA+EjrZyWUvpAAAAABJRU5ErkJggg==">
+          一篇git扫盲
+        </h1>  <div class="theme-vdoing-content content__default"><p>版本管理在产品级开发中是非常重要的一个部分，它涉及到团队协作，且影响到产品最终的发布、上线以及测试环节，当前最流行的版本控制系统是 git。git 内容非常多，本文只讲基础和平时工作中常用的命令。</p> <h2 id="git-优势"><a href="#git-优势" class="header-anchor">#</a> git 优势</h2> <p>1、分布式版本管理系统</p> <p>2、速度快</p> <p>3、设计简单</p> <p>4、轻量级的分支操作，允许上千个并行开发的分支，对非线性开发模式的强力支持</p> <p>5、有能力高效管理类似 linux 内核一样的超大规模项目</p> <p>6、git 已经成为事实上的标准，几乎所有优秀的前端项目都通过 git 来进行版本控制</p> <p>7、社区成熟活跃，git 的流行离不开 github 的贡献</p> <h2 id="git-配置"><a href="#git-配置" class="header-anchor">#</a> git 配置</h2> <div class="language- extra-class"><pre><code>取消全局配置    git config --global --unset user.name
+设置全局用户名  git config --global user.name &quot;erdang&quot;
+设置全局邮箱    git config --global user.email &quot;924064382@qq.com&quot;
+查看所有配置    git config --list
+查看全局配置    git config --list --global
+--global 可选 以下  设置本仓库 --global 删除
+--local【默认，高优先级】：只影响本仓库，文件为.git/config
+--global【中优先级】：影响到所有当前用户的git仓库，文件为~/.gitconfig
+--system【低优先级】：影响到全系统的git仓库，文件为/etc/gitconfig
+如果要删除或修改配置，更简单的办法是直接打开~/.gitconfig文件，或者.git/config文件修改即可
+</code></pre></div><h3 id="关于忽略的配置"><a href="#关于忽略的配置" class="header-anchor">#</a> 关于忽略的配置</h3> <p>可以在项目根目录创建一个名为 .gitignore 的文件，列出要忽略的文件模式
+文件 .gitignore 的格式规范如下：</p> <p>1、所有空行或者以注释符号 ＃ 开头的行都会被 git 忽略</p> <p>2、可以使用标准的 glob 模式匹配</p> <p>3、匹配模式以反斜杠(/)开头防止递归</p> <p>4、匹配模式最后跟反斜杠(/)说明要忽略的是目录</p> <p>5、要忽略指定模式以外的文件或目录，可以在模式前加上叹号(!)取反</p> <div class="language- extra-class"><pre><code>node_modules/
+ecosystem.json
+.DS_Store
+.idea
+.vscode
+</code></pre></div><h3 id="ssh-配置"><a href="#ssh-配置" class="header-anchor">#</a> SSH 配置</h3> <div class="language- extra-class"><pre><code>cd ~/.ssh
+ssh-keygen -t rsa -C &quot;your_email@youremail.com&quot;  一路回车
+cat id_rsa.pub
+登陆 gitHub，打开 Settings 中的 SSH Keys 页面
+ssh -T git@github.com 测试成功
+Hi littlematch0123! You've successfully authenticated, but GitHub does not provide shell access.
+.ssh 目录，里面有 id_rsa 和 id_rsa.pub 两个文件，这两个就是 SSH Key 的秘钥对，
+id_rsa 是私钥，不能泄露出去，id_rsa.pub 是公钥，可以放心地告诉任何人
+
+如果配置 多用户 config  生成新的ssh 之后 需要  ssh-add id_rsa  添加生效
+#github user
+Host git@github.com
+Hostname https://github.com/
+User 924064382@qq.com
+IdentityFile ~/.ssh/id_rsa
+
+#gitlab user
+Host  172.16.27.229:8888
+Hostname http://172.16.27.229:8888/
+User git
+IdentityFile ~/.ssh/id_rsa_1
+</code></pre></div><h2 id="重要概念"><a href="#重要概念" class="header-anchor">#</a> 重要概念</h2> <h3 id="【常用术语】"><a href="#【常用术语】" class="header-anchor">#</a> 【常用术语】</h3> <div class="language- extra-class"><pre><code>repository 仓库
+branch 分支
+summary 概要
+track 跟踪
+modify 修改
+stage 暂存区
+stash 暂存
+commit 提交
+push 推送
+pull 拉取加合并
+fetch 拉取
+clone 克隆
+amend 修改
+merge 合并
+conflict 冲突
+origin 起源
+upstream 上游
+downstream 下游
+verbose 冗长的
+reflog 回流
+rebase 变基
+</code></pre></div><h3 id="【-git-目录】"><a href="#【-git-目录】" class="header-anchor">#</a> 【.git 目录】</h3> <p>每个项目都有一个 git 目录(如果 git clone 出来的话，就是其中.git 的目录)，它是 git 用来保存元数据和对象数据库的地方。这个目录非常重要，每次克隆镜像仓库的时候，实际拷贝的就是这个目录里面的数据</p> <ul><li><p>工作区：就是你在电脑里能看到的目录。</p></li> <li><p>暂存区：英文叫 stage 或 index。一般存放在 .git 目录下的 index 文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。
+(索引文件里面包含的是文件的目录树，像一个虚拟的工作区，在这个虚拟工作区的目录树中，记录了文件名、文件的最后修改时间、文件长度、文件类型以及最重要的 SHA-1 值，文件的内容并没有存储在其中。而这个 SHA-1 值就是某个文件的当前版本号。而文件的具体内容是在.git/objects 目录下，你会发现这个目录占用空间比较大，因为它存储着当前项目文件各个版本的内容。)</p></li> <li><p>版本库：工作区有一个隐藏目录 .git，这个不算工作区，而是 Git 的版本库。</p></li></ul> <h3 id="【head-是啥-】"><a href="#【head-是啥-】" class="header-anchor">#</a> 【HEAD 是啥？】</h3> <p>用 HEAD 来表示当前版本，也就是最新的提交，上一个版本就是 HEAD^，上上一个版本就是 HEAD^^，当然往上 100 个版本写 100 个^比较容易数不过来，所以写成 HEAD~100</p> <p>假设，我们现在关闭 git bash 和工作目录，当我们下次再次进入工作目录并且打开 git bash 时，仍然会显示为当前处于 master 分支，
+因为我们上次关闭工作目录之前，已经切换到了 master 分支，当然，如果你之前处于 test 分支，那么当你再次打开工作空间，
+仍然会显示你处于 test 分支。
+<br>
+git 其实就是靠 HEAD 知道我们该处于哪个分支的,HEAD 理解成一个指针
+<br>
+通常情况下 HEAD 指针指向我们所在的分支（的分支指针)，间接的指向了当前分支的最新提交
+<br>
+.git/HEAD
+<br>
+.git/refs/heads</p> <p>特殊情况下 分离头 HEAD 指针没有指向分支指针，而是直接指向了某个提交 （直接检出一个提交 git checkout 哈希）
+<br>
+git log --oneline --all --graph 命令行中以字符的形式尽量接近图形化的方式展示分支
+分离头的状态就是让我们可以随意的检出某个提交，然后基于这个提交创建一些新提交</p> <p>git reflog 中记录的就是各种指针的常见操作，对分支指针、HEAD 指针等各种” 指针”（即”引用”）的常见操作都会记录
+<a href="https://www.zsythink.net/archives/3412/" target="_blank" rel="noopener noreferrer">HEAD 详细介绍<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="【git-基础操作】"><a href="#【git-基础操作】" class="header-anchor">#</a> 【git 基础操作】</h2> <h3 id="git-clone"><a href="#git-clone" class="header-anchor">#</a> git clone</h3> <p>克隆仓库的命令格式为</p> <div class="language- extra-class"><pre><code>git clone repo
+</code></pre></div><p>如果我们需要克隆到指定的目录，可以使用以下命令格式</p> <div class="language- extra-class"><pre><code>git clone &lt;repo&gt; &lt;directory&gt;
+</code></pre></div><h3 id="git-init"><a href="#git-init" class="header-anchor">#</a> git init</h3> <p>要对现有的某个项目开始用 git 管理，只需到此项目所在的目录，执行</p> <div class="language- extra-class"><pre><code>git init
+</code></pre></div><h3 id="git-add"><a href="#git-add" class="header-anchor">#</a> git add</h3> <p><code>git add</code> 命令是个多功能命令，根据目标文件的状态不同，此命令的效果也不同：<br>
+可以用它开始跟踪新文件，或者把已跟踪的文件放到暂存区，还能用于合并时把有冲突的文件标记为已解决状态等</p> <div class="language- extra-class"><pre><code>git add text 添加单个到下一次提交中
+git add . 添加当前目录下所有文件到下一次提交中
+</code></pre></div><h3 id="git-commit"><a href="#git-commit" class="header-anchor">#</a> git commit</h3> <div class="language- extra-class"><pre><code>git commit -m '更新 README 内容'
+git commit -am '更新 README'  加上 -a 选项，git 会自动把所有已经跟踪过的文件暂存起来一并提交
+git commit -amend 修改最后一个提交 不会产生新的提交记录
+git commit -v
+使用 -v 或--verbose选项，翻译成中文是冗余的，它不仅能回顾刚刚修改的内容，而且会迫使把提交理由写得更详细些
+</code></pre></div><h3 id="git-log-与-git-reflog"><a href="#git-log-与-git-reflog" class="header-anchor">#</a> git log 与 git reflog</h3> <div class="language- extra-class"><pre><code>git log 可以查看提交历史
+git log --oneline 将每个提交放在一行显示，这在提交数很大时非常有用
+git log -p -2  -p 选项展开显示每次提交的内容差异，用 -2 则仅显示最近的两次更新
+git reflog 用来记录每一次命令 各种指针的常见操作
+git blame &lt;file&gt; 以列表形式显示修改记录指定文件
+</code></pre></div><h3 id="git-diff-查看不同"><a href="#git-diff-查看不同" class="header-anchor">#</a> git diff 查看不同</h3> <div class="language- extra-class"><pre><code>git diff 工作目录中当前文件和暂存区域快照之间的差异
+git diff --cached  看已经暂存起来的文件和上次提交时的快照之间的差异
+</code></pre></div><h3 id="git-status-查看状态"><a href="#git-status-查看状态" class="header-anchor">#</a> git status 查看状态</h3> <p>要确定哪些文件当前处于什么状态，可以用 <code>git status</code>命令<br> <code>git status</code>命令的输出十分详细，但其用语有些繁琐。<br>
+如果使用 <code>git status -s</code> 命令或 <code>git status --short</code> 命令，将得到一种更为紧凑的格式输出<br>
+一般地，-s 选项与-b 选项同时使用，s 代表 summary(概要)，b 代表 branch(分支)</p> <h3 id="git-reset"><a href="#git-reset" class="header-anchor">#</a> git reset</h3> <p>git reset 命令用于回退版本，可以指定退回某一次提交的版本。</p> <div class="language- extra-class"><pre><code>git reset [--soft | --mixed | --hard][HEAD]
+--soft 工作区和暂存区 不会改变
+--hard 工作区和暂存区 都会改变
+--mixed 暂存区改变 工作区不变 默认值
+git reset HEAD 取消git add 添加
+</code></pre></div><h3 id="分支-git-branch-和-git-checkout"><a href="#分支-git-branch-和-git-checkout" class="header-anchor">#</a> 分支 git branch 和 git checkout</h3> <p>git 中默认分支的名字是<code>master</code>，而<code>origin</code>是 Git 给克隆的仓库服务器的默认名字。</p> <div class="language- extra-class"><pre><code>git checkout test 创建分支
+git checkout test -b 创建分支并切换到当前分支
+git checkout &lt;remotebranch&gt; origin/&lt;remotebranch&gt; 检出远程分支
+git checkout -b new test/acc 检出远程 test仓库下 acc分支到本地
+git checkout --文件 丢弃文件工作区的修改
+git branch test -d 删除分支
+git branch test -D 强制删除分支
+git branch 显示当前所有分支的一个列表
+git branch -v 可以查看每一个分支的最后一次提交
+git branch --merged 可以看到已经合并到当前分支的分支列表
+</code></pre></div><h3 id="合并分支-解决冲突"><a href="#合并分支-解决冲突" class="header-anchor">#</a> 合并分支 (解决冲突)</h3> <div class="language- extra-class"><pre><code>当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。
+手动解决完 git add .  提交
+git merge --abort 退出合并
+</code></pre></div><h3 id="git-rebase"><a href="#git-rebase" class="header-anchor">#</a> git rebase</h3> <div class="language- extra-class"><pre><code>git rebase [branch] 把分叉的提交变成直线。
+git log  查看提交记录 然后 找到版本号
+git reabse -i 哈希 合并提交记录
+按i 进入编辑模式   不需要的 改成s
+pick：保留该commit（缩写:p）
+reword：保留该 commit，但我需要修改该 commit 的注释（缩写:r）
+edit：保留该 commit, 但我要停下来修改该提交(不仅仅修改注释)（缩写:e）
+squash：将该 commit 和前一个 commit 合并（缩写:s）
+</code></pre></div><h3 id="git-fetch-与-git-pull"><a href="#git-fetch-与-git-pull" class="header-anchor">#</a> git fetch 与 git pull</h3> <div class="language- extra-class"><pre><code> git fetch origin master:brantest 命令用于从远程获取代码库
+ git fetch 简写
+ git fetch -p 命令 删除不存在的远程分支
+ git merge [branch] 合并
+ git pull == git fetch 加 git merge
+ git pull &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;
+ git pull origin master:brantest
+ 将远程主机 origin 的 master 分支拉取过来，与本地的 brantest 分支合并。
+ git pull origin master 与当前分支合并
+</code></pre></div><h3 id="git-push"><a href="#git-push" class="header-anchor">#</a> git push</h3> <div class="language- extra-class"><pre><code>git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;
+git push --force origin master:master --force强制
+git push origin --delete master 删除分支
+</code></pre></div><h3 id="git-remote-命令"><a href="#git-remote-命令" class="header-anchor">#</a> git remote 命令</h3> <div class="language- extra-class"><pre><code>git remote -v 显示所有远程仓库
+origin 为远程地址的别名
+git remote show [remote]  显示某个远程仓库的信息
+git remote add [shortname] [url] 添加远程版本库： shortname 为本地的版本库，
+git remote add origin git@github.com:tianqixin/runoob-git-test.git
+git push -u origin master
+git remote rm name  # 删除远程仓库
+git remote rename old_name new_name  # 修改仓库名
+git push --set-upstream origin branch_name
+在远程创建一个与本地branch_name 分支同名的分支并跟踪；
+git checkout --track origin/branch_name
+来在本地创建一个与 branch_name 同名分支跟踪远程分支
+</code></pre></div><h3 id="删除"><a href="#删除" class="header-anchor">#</a> 删除</h3> <div class="language- extra-class"><pre><code>git rm text 删除文件
+git rm -f text 强制删除  -force 强制
+git rm -rf text 强制删除文件夹 -r 递归
+git rm --cached text  删除缓存 不被跟踪
+</code></pre></div></div></div> <div class="page-slot page-slot-bottom"><!-- 横向自适应 -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="6620245489"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script></div> <div class="page-edit"><!----> <!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2023/02/15, 19:45:27</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><!----> <a href="/pages/5d396b/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">前端应该掌握的命令行</div></a></div> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/pages/5d396b/">前端应该掌握的命令行</a>→
+      </span></p></div></div></div> <!----></main></div> <div class="footer"><div class="icons"><a href="mailto:924064382@qq.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/erdang" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://music.163.com/#/playlist?id=755597173" title="听音乐" target="_blank" class="iconfont icon-erji"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2021-2023
+    <span>Er Dang | MIT License</span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <div class="custom-html-window custom-html-window-rb" style="display:;"><div class="custom-wrapper"><i class="close-but">×</i> <div><!-- 固定160*160px -->
+      <ins class="adsbygoogle"
+          style="display:inline-block;width:160px;height:160px"
+          data-ad-client="ca-pub-7828333725993554"
+          data-ad-slot="8377369658"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+      </div></div></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.c3eaab60.js" defer></script><script src="/assets/js/2.0d541d74.js" defer></script><script src="/assets/js/9.a3529f32.js" defer></script>
+  </body>
+</html>
